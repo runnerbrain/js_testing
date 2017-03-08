@@ -21,19 +21,19 @@ var me = {
 };
 
 //what about a regular object
-/*{
+({
     name: 'func1',
     number : 1
-}*/
+});
 
-//this won't work
+//this won't work without the brackets.
 
 //what about functions
-/*function(name){
+/*function (name){
     return 'Hello '+ name;
 }*/
 
-//if we run it it won't. The solution is to wrap it with parentheses. then it's just a valid expression.
+//if we run it it won't work as an anonymous function. The solution is to wrap it with parentheses. then it's just a valid expression.
 (function(name){
     console.log('Hi '+name);
 });
@@ -42,4 +42,4 @@ var me = {
 
 (function(name){
     console.log('Hi '+name);
-})('Booboo');
+})('Mahmoud');

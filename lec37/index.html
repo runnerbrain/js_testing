@@ -13,6 +13,14 @@ It has an outer envirnoment.
 <br/>
 It also gives us a variable callee "this"
 <br />
+Note: what about methods. Note: When inside an object, the value of a primitive type is called a property and if it's a function it's called a method.
+<br />
+
+Conclusion:
+so in closing the this keyword is the global variable when invoked from inside a function
+but when used from inside the method of an object, the this keyword points to the object itself.
+however any internal functions inside the method present us with what most people believe to be a bug in the JS programming language
+so the workaround is to create an object called self and set it equal to this which is pointing to the object and then use self instead of this.
 
 
 </body>
